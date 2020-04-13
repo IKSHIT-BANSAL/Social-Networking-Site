@@ -1,0 +1,29 @@
+[33mcommit ae83e058efa5e6e46ca75245984642bbe03908f3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ikshit bansal <ikshitbansal1998@gmail.com>
+Date:   Tue Apr 7 14:09:01 2020 +0530
+
+    setup static files access for layouts and pages
+
+[33mcommit 6749212ef22fb1b7b847a13914a55d0242112444[m
+Author: ikshit bansal <ikshitbansal1998@gmail.com>
+Date:   Mon Apr 6 13:16:14 2020 +0530
+
+    View Engine is setup
+
+[33mcommit b58e031f7624b73fa3131ca28081a34cfdf03f02[m
+Author: ikshit bansal <ikshitbansal1998@gmail.com>
+Date:   Mon Apr 6 13:11:51 2020 +0530
+
+    Post controller is added
+
+[33mcommit 2cf98f5b3fa232012f09dc88c04eebbc36ab1107[m
+Author: ikshit bansal <ikshitbansal1998@gmail.com>
+Date:   Sun Apr 5 17:42:14 2020 +0530
+
+    add a controller and a router for home
+
+[33mcommit fe76043ce3fe0379efaa153820fb0ac972ebea8c[m
+Author: ikshit bansal <ikshitbansal1998@gmail.com>
+Date:   Sun Apr 5 13:44:36 2020 +0530
+
+    First commit : create the directory and setup express server
