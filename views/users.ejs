@@ -9,16 +9,11 @@
         <%-include('_header'); %> -->
         <link rel="stylesheet" href="/css/users.css">
 
-        <h1>Sign Up page</h1>
-        <form action="">
-            <input type="text" placeholder="Enter User name">
-            <input type="text" placeholder="Enter email">
-            <input type="password" placeholder="Enter Password">
-
-            <button type="submit">
-                Add user
-            </button>
-        </form>
+        <div id="box">
+            <h1>Codeial /Profile Page</h1>
+            <p id="name"><%= user.name %></p>
+            <p><%= user.email %></p>
+        </div>
 
         <!-- <%-include('_footer'); %>
     </body>
