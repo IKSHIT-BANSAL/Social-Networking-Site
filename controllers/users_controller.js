@@ -1,6 +1,6 @@
 const User=require('../models/user');
 
-module.exports.profile=function(req,res){
+module.exports.profile=function(req,res){         //Lets keeep this same as beforeas there is no nesting level
      // res.end('<h1>User Profile </h1>');
 
      User.findById(req.params.id,function(err,user){
