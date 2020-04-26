@@ -16,6 +16,9 @@ const passportLocal=require('./config/passport-local-strategy');
 const MongoStore=require('connect-mongo')(session);   //as we r required to store session cookie there so arg r required
 const sassMiddleware=require('node-sass-middleware');
 
+const flash=require('connect-flash');
+const customMware=require('./config/middleware')
+
 app.use(sassMiddleware({
     src:'./assets/scss',
     dest:'./assets/css',
@@ -63,6 +66,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
+
+app.use(flash());
+app.use(customMware.setFlash);
 
 //use express router
 app.use('/',require('./routes'));
