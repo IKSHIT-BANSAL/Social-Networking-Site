@@ -9,8 +9,6 @@ module.exports.profile=function(req,res){         //Lets keeep this same as befo
                profile_user:user
           });
      })
-
-
 }
 module.exports.update=function(req,res){
      if(req.user.id==req.params.id){
