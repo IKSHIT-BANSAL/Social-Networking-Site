@@ -13,6 +13,7 @@
                 success:function(data){
                     let newPost=newPostDom(data.data.post);
                     $('#posts-list-container>ul').prepend(newPost);
+                    deletePost($(' .delete-post-button',newPost));                    
                 },error:function(error){
                     console.log(error.responseText);
                 }
@@ -26,33 +27,52 @@
         return $(`<li id="post-${post._id}">
                    
                         <small>
-                            <a class="delete-post-button" href="/posts/destroy/${post.id}">
+                            <a class="delete-post-button" href="/posts/destroy/${post._id}">
                                 X
                             </a>
                         </small>
-                  
-                    ${post.content}
-                    <small>
-                        ${post.user.name}
-                    </small>
 
-                    <div class="post-comments">
-                        
-                            <form action="/comments/create" method="POST">
-                                <input type="text" name="content" placeholder="Type here to add comment.." required>
-                                <input type="hidden" name="post" value="${post._id}" >
-                                <input type="submit" value="Add Comment">
-                            </form>
+                        <br>
+                        ${post.content}
+                        <br>
+                        <small>
+                            ${post.user.name}
+                        </small>
 
-                         
+                        <div class="post-comments">
+                            
+                                <form action="/comments/create" method="POST">
+                                    <input type="text" name="content" placeholder="Type here to add comment.." required>
+                                    <input type="hidden" name="post" value="${post._id}" >
+                                    <input type="submit" value="Add Comment">
+                                </form>
 
-                        <div class="post-comments-list">
-                            <ul id="post-comments-<%= post._id %>">
+                                
 
-                            </ul>
+                            <div class="post-comments-list">
+                                <ul id="post-comments-<%= post._id %>">
+
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>`)
+                    </li>`)
+    }
+
+    //method to delete a post from DOM
+    let deletePost=function(deleteLink){
+        $(deleteLink).click(function(e){
+            e.preventDefault();
+
+            $.ajax({
+                type:'get',
+                url:$(deleteLink).prop('href'),
+                success:function(data){
+                    $(`#post-${data.data.post_id}`).remove();
+                },error:function(error){
+                    console.log(error.responseText);
+                }
+            })
+        })
     }
 
     createPost();
