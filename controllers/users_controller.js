@@ -10,12 +10,44 @@ module.exports.profile=function(req,res){         //Lets keeep this same as befo
           });
      })
 }
-module.exports.update=function(req,res){
+module.exports.update=async function(req,res){
+     // if(req.user.id==req.params.id){
+     //      User.findByIdAndUpdate(req.params.id,req.body,function(err,user){
+     //           req.flash('success','Updated successfully!!');
+     //           return res.redirect('back');
+     //      });
+     // }else{
+     //      req.flash('error','You are not access to this');
+     //      return res.status(401).send('Unauthorized');
+     // }
+
      if(req.user.id==req.params.id){
-          User.findByIdAndUpdate(req.params.id,req.body,function(err,user){
-               req.flash('success','Updated successfully!!');
-               return res.redirect('back');
-          });
+          try {
+               
+               let user=await User.findById(req.params.id);
+               User.uploadedAvatar(req,res,function(err){
+                    if(err){
+                         console.log('******multer Error',err);
+                    }
+                    console.log(req.file);
+                    user.name=req.body.name;
+                    user.email=req.body.email;
+
+                    if(req.file){
+
+                         //this is saving path of uploaded file into into avatar field in the user
+                         user.avatar=User.avatarPath+'/'+req.file.filename
+                    }
+                    user.save();
+                    return res.redirect('back');
+               })
+          } catch (error) {
+               if(err){
+                    req.flash('error',err);
+                    return res.redirect('back');
+               }
+          }
+
      }else{
           req.flash('error','You are not access to this');
           return res.status(401).send('Unauthorized');
