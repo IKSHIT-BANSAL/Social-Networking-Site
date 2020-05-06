@@ -5,10 +5,11 @@ module.exports.create=async function(req,res){
     try {
         let post =await Post.create({
             content:req.body.content,
-            user:req.user._id
+            user:req.user._id,
         });
 
         if(req.xhr){
+            post=await post.populate('user').execPopulate();
             return res.status(200).json({
                 data:{
                     post:post
@@ -42,7 +43,9 @@ module.exports.destroy=async function(req,res){
                     data:{
                         post_id:req.params.id
                     },
-                    message:'Post deleted'
+                    message:'Post deleted',
+                    
+                    
                 })
             }
             

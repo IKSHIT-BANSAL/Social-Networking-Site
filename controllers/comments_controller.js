@@ -13,6 +13,17 @@ module.exports.create=async function(req,res){
             post.comments.push(comment);    //Update of comments in array present 
             post.save();        //To be saved in the database
 
+            if(req.xhr){
+                comment=await comment.populate('user','name').execPopulate();
+                return res.status(200).json({
+                    data:{
+                        comment:comment,
+                        post:post
+                    },
+                    message:'Comment created!'
+                })
+            }
+
             req.flash('success','Comment added successfully!');
             return res.redirect('back');
         }
@@ -30,12 +41,21 @@ module.exports.destroy=async function(req,res){
 
             let postId=comment.post;
             comment.remove();
-            let post=await Post.findByIdAndUpdate(postId, {$pull :{ comments:req.params.id}});
+            
+            await Post.findByIdAndUpdate(postId, {$pull :{ comments:req.params.id}});
+
+            if(req.xhr){
+                return res.status(200).json({
+                    data: {
+                        comment_id: req.params.id
+                    },
+                    message: "Comment deleted !!"
+                });
+            }
 
             req.flash('success','Comment deleted successfull!');
             return res.redirect('back');
-
-        }else{
+            }else{
             req.flash('error','you cant delete this comment');
             return res.redirect('back');
         }

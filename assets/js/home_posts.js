@@ -11,9 +11,22 @@
                 url:'/posts/create',
                 data:newPostForm.serialize(),
                 success:function(data){
+                    // console.log(data);
                     let newPost=newPostDom(data.data.post);
                     $('#posts-list-container>ul').prepend(newPost);
-                    deletePost($(' .delete-post-button',newPost));                    
+                    deletePost($(' .delete-post-button',newPost));    
+                    
+                    // call the create comment class
+                    new PostComments(data.data.post._id);
+
+                    new Noty({
+                        theme:'relax',
+                        text:'Post Published !!',
+                        type:'success',
+                        layout:'topRight',
+                        timeout:1500
+                    }).show();
+
                 },error:function(error){
                     console.log(error.responseText);
                 }
@@ -68,6 +81,15 @@
                 url:$(deleteLink).prop('href'),
                 success:function(data){
                     $(`#post-${data.data.post_id}`).remove();
+
+                    new Noty({
+                        theme:'relax',
+                        text:'Post Deleted !!',
+                        type:'success',
+                        layout:'topRight',
+                        timeout:1500
+                    }).show();
+                    
                 },error:function(error){
                     console.log(error.responseText);
                 }
@@ -75,5 +97,18 @@
         })
     }
 
+    let convertPostToAjax = function(){
+        $('#posts-list-container>ul>li').each(function(){
+            let self = $(this);
+            let deleteButton = $(' .delete-post-button', self);
+            deletePost(deleteButton);
+
+            // get the post's id by splitting the id attribute
+            let postId = self.prop('id').split("-")[1]
+            new PostComments(postId);
+        });
+    }
+
     createPost();
+    convertPostToAjax();
 }
