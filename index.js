@@ -34,6 +34,9 @@ app.use(express.static('./assets'));
 //use layouts
 app.use(expressLayouts);
 
+//make uploads path available to the browser
+app.use('/uploads',express.static(__dirname + '/uploads'));
+
 //To extract and style from sub pages into the layour
 app.set('layout extractStyles',true);
 app.set('layout extractScripts',true);

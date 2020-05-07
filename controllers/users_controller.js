@@ -11,15 +11,6 @@ module.exports.profile=function(req,res){         //Lets keeep this same as befo
      })
 }
 module.exports.update=async function(req,res){
-     // if(req.user.id==req.params.id){
-     //      User.findByIdAndUpdate(req.params.id,req.body,function(err,user){
-     //           req.flash('success','Updated successfully!!');
-     //           return res.redirect('back');
-     //      });
-     // }else{
-     //      req.flash('error','You are not access to this');
-     //      return res.status(401).send('Unauthorized');
-     // }
 
      if(req.user.id==req.params.id){
           try {
