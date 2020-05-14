@@ -7,5 +7,6 @@ const postsApi=require('../../../controllers/api/v1/posts_api');
 router.get('/',postsApi.index);
 
 router.delete('/:id',passport.authenticate('jwt',{session:false}),postsApi.destroy);
+                                            //session false means we dont want session cookie to be
 
 module.exports=router;
