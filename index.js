@@ -13,6 +13,7 @@ const session=require('express-session');
 const passport=require('passport');
 const passportLocal=require('./config/passport-local-strategy');
 const passportJWT=require('./config/passport-jwt-strategy');
+const passportGoogle=require('./config/passport-google-oauth2-strategy');
 
 const MongoStore=require('connect-mongo')(session);   //as we r required to store session cookie there so arg r required
 const sassMiddleware=require('node-sass-middleware');
