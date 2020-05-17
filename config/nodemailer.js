@@ -13,13 +13,13 @@ let transporter=nodemailer.createTransport({
     }
 });
 
-let renderTemplate=(data,relatePath) => {
+let renderTemplate=(data,relativePath) => {
     let mailHTML;           //variable use to store HTML mails to be sent
     ejs.renderFile(
         path.join(__dirname,'../views/mailers',relativePath),   //relative path is path from where this function is called
         data,       //context to be filled like name
-        function(err){
-            if(err,template){
+        function(err,template){
+            if(err){
                 console.log('error in rendering template',err);
                 return;
             }
