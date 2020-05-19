@@ -1,6 +1,9 @@
 const Comment=require('../models/comment');
 const Post=require('../models/post');
 const commentMailer=require('../mailers/comments_mailer');
+const commentEmailWorker=require('../workers/comment_email_worker');
+const queue=require('../config/kue');
+
 module.exports.create=async function(req,res){
     try {
         let post =await Post.findById(req.body.post);
@@ -14,7 +17,17 @@ module.exports.create=async function(req,res){
             post.comments.push(comment);    //Update of comments in array present 
             post.save();        //To be saved in the database
             comment=await comment.populate('user','name email').execPopulate();
-            commentMailer.newComment(comment);
+            // commentMailer.newComment(comment);
+
+            //save function to save it in database
+            let job=queue.create('emails',comment).save(function(err){      //here creation of queue emails
+                if(err){                                             //comment is here which is send in email
+                    console.log('Error in creating to queue',err);
+                    return;
+                }
+                console.log('job enqueued',job.id);
+            });
+
             if(req.xhr){
                 
                 return res.status(200).json({
