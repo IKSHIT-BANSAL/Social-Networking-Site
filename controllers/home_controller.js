@@ -1,35 +1,10 @@
 const Post=require('../models/post');
 const User=require('../models/user');
 
-// module.exports.home=function(req,res){
-
-//     console.log(req.cookies);
-//     res.cookie('user_id',25);
-//     Post.find({})
-//     .populate('user')
-//     .populate({
-//         path:'comments',
-//         populate:{
-//             path:'user'
-//         }
-//     })
-//     .exec(function(err,posts){
-//         User.find({},function(err,users){
-//             return res.render('home',{
-//                 title:"Home",
-//                 posts:posts,
-//                 all_users:users
-//             });
-//         })
-
-
-//     });
-// }
-
+module.exports.home=async function(req,res){
 // Converting above functioin to asyn Await
 
-try {
-    module.exports.home=async function(req,res){
+    try {
         let posts=await Post.find({})
         .sort('-createdAt')
         .populate('user')
@@ -37,8 +12,11 @@ try {
             path:'comments',
             populate:{
                 path:'user'
+            },
+            populate:{          //for comments
+                path:'likes'
             }
-        });
+        }).populate('likes');   
 
         let users=await User.find({});
 
@@ -47,8 +25,8 @@ try {
             posts:posts,
             all_users:users
         });
+    } catch (err) {
+        console.log('Error',err);
+        return;
     }
-} catch (err) {
-    console.log('Error',err);
-    return;
 }

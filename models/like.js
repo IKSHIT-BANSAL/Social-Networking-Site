@@ -2,11 +2,11 @@ const mongoose=require('mongoose');
 
 const likeSchema=new mongoose.Schema({
     user:{
-        type:mongoose.Schema.Types.ObjectId
+        type:mongoose.Schema.ObjectId
     },
     //this defines objectID of the liked object
     likeable:{           
-        type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.Schema.ObjectId,
         required:true,
         refPath:'onModel'       //gives path on which type like is done
     },
@@ -21,5 +21,5 @@ const likeSchema=new mongoose.Schema({
     timestamps:true
 });
 
-const Like=mongoose.model('like',likeSchema);
+const Like=mongoose.model('Like',likeSchema);
 module.exports=Like;

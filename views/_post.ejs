@@ -10,6 +10,17 @@
     <small>
         <p><%= post.user.name %></p>
     </small>
+  
+        <!-- For displaying likes for comment -->
+        <small>
+            <% if(locals.user){ %>
+                <a class="toggle-like-button" data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%= post._id %>&type=Post">
+                    <%= post.likes.length %>Likes   
+                </a> 
+            <% }else{%>
+                <%= post.likes.length %>Likes
+            <% } %>        
+        </small>
 
     <!-- From here comments to be added or deleted -->
 
