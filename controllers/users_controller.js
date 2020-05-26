@@ -1,6 +1,7 @@
 const User=require('../models/user');
 const fs=require('fs');
 const path=require('path');
+const password=require('../models/forgot_pass');
 
 module.exports.profile=function(req,res){         //Lets keeep this same as beforeas there is no nesting level
      // res.end('<h1>User Profile </h1>');
@@ -84,6 +85,7 @@ module.exports.signIn=function(req,res){
 
 //get the sign up data
 module.exports.create=function(req,res){
+     console.log(req.body);
      if(req.body.password!=req.body.confirm_password){
           req.flash('success','Passwords did not match');
           return res.redirect('back');
@@ -121,4 +123,20 @@ module.exports.destroySession=function(req,res){
      req.logout();
      req.flash('success','You have Logged out');     
      return res.redirect('/');
+}
+
+module.exports.forgotPass=function(req,res){
+     return res.render('forgot_pass',{
+          title:'Forgot Password'
+     })
+}
+
+module.exports.change=async function(req,res){
+     let pass=await password.findOne({accessToken:req.params.id})
+     let user=await User.findById(pass.user);
+     return res.render('changePassword',{
+          title:'Hey change your password here',
+          password:pass,
+          user:user
+     })
 }

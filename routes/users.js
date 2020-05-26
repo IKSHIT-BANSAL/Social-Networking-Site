@@ -3,12 +3,19 @@ const router=express.Router();
 const passport=require('passport');
 
 const userController=require('../controllers/users_controller');
+const forgotPass=require('../controllers/forgot_pass');
 
 router.get('/profile/:id',passport.checkAuthentication,userController.profile);
 router.post('/update/:id',passport.checkAuthentication,userController.update);
 
 router.get('/sign-up',userController.signUp);
 router.get('/sign-in',userController.signIn);
+
+router.get('/forgotPassword',userController.forgotPass);
+router.get('/changePassword/:id',userController.change);
+
+router.post('/newPassword',forgotPass.forgotPassword);
+router.post('/changePassword/:accessToken',forgotPass.changePass);
 
 router.post('/create',userController.create);
 

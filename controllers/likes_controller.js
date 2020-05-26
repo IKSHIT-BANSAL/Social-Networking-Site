@@ -5,7 +5,7 @@ const Post=require('../models/post');
 module.exports.toggleLike=async function(req,res){
     try {
         
-        //url will be likes/toggle/?id=abcdef&type=Post_or_Comment
+        //url will be likes =>  /like/toggle/?id=abcdef&type=Post_or_Comment
         let likeable;
         let deleted=false;
         if(req.query.type=='Post'){
@@ -45,7 +45,6 @@ module.exports.toggleLike=async function(req,res){
         })
 
     } catch (err) {
-        console.log('******************snjs');
         console.log('err',err);
         return res.json(500,{
             message:'Internal Server error'
