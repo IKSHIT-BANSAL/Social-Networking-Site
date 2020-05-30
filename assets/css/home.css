@@ -6,5 +6,11 @@
     padding: 10px; }
   #home-container #user-friends {
     width: 30%;
-    padding: 10px;
     border-left: 1px solid green; }
+    #home-container #user-friends #friends {
+      width: 99%;
+      height: 30%;
+      border-bottom: 2px solid springgreen; }
+    #home-container #user-friends #users {
+      width: 90%;
+      height: 40%; }

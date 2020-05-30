@@ -18,7 +18,7 @@ module.exports.toggleLike=async function(req,res){
         let existingLike=await Like.findOne({
             likeable:req.query.id,
             onModel:req.query.type,
-            user:req.user._id
+            user:req.user._id       //as a user is under authenticated they cant like without sign-in
         });
 
         // if a like alrady exist then delete it

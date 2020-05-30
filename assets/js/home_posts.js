@@ -20,6 +20,7 @@
                     // call the create comment class
                     new PostComments(data.data.post._id);
 
+                    //to bind with new post created with toggle-like-button class
                     new ToggleLike($(' .toggle-like-button',newPost));
 
                     new Noty({

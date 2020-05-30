@@ -31,9 +31,20 @@
             <div id="box">
                 <p id="name"><%= profile_user.name %></p>
                 <p><%= profile_user.email %></p>
+                <a class="toggle-button" href="/friendship/addFriend/?id=<%= profile_user.id %>">
+                    <button type="submit">
+                        <% if(locals.userSelected){ %>
+                            Remove Friend    
+                        <% }else{ %>
+                            Add Friend
+                         <%}%>   
+                    </button>
+                </a>
             </div>
         <% } %>
 
+
+        <script src="/js/toggle-button.js"></script>
         <!-- <%-include('_footer'); %>
     </body>
 </html> -->

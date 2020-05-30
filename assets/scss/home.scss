@@ -7,8 +7,17 @@
     }
 
     #user-friends{
-        width:30%;
-        padding: 10px;
+        width: 30%;
         border-left: 1px solid green;
+        #friends{
+            width: 99%;
+            height: 30%;
+            border-bottom: 2px solid springgreen;
+        }
+        #users{
+            width: 90%;
+            height: 40%;
+        }
+
     }
 }

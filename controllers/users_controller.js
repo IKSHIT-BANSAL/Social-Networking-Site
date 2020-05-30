@@ -2,16 +2,40 @@ const User=require('../models/user');
 const fs=require('fs');
 const path=require('path');
 const password=require('../models/forgot_pass');
+const Friends=require('../models/friendship');
 
-module.exports.profile=function(req,res){         //Lets keeep this same as beforeas there is no nesting level
+module.exports.profile=async function(req,res){         //Lets keeep this same as beforeas there is no nesting level
      // res.end('<h1>User Profile </h1>');
+     try {
+          let user=await User.findById(req.params.id);
+          let userSelected=false;
+          let friend1=await Friends.findOne({
+               from_user:req.params.id,
+               to_user:req.user._id
+          });
+          let friend2=await Friends.findOne({
+               to_user:req.params.id,
+               from_user:req.user._id
+          });
+          console.log('********',friend1,friend2);
+          if(friend1 || friend2){
+               userSelected=true;
+          }
 
-     User.findById(req.params.id,function(err,user){
           return res.render('users',{
                title:'Users Controller',
-               profile_user:user
-          });
-     })
+               profile_user:user,
+               userSelected:userSelected
+          });       
+
+     } catch (err) {
+          if(err){
+               console.log('Error',err);
+               return;
+          }
+          
+     }
+
 }
 module.exports.update=async function(req,res){
      // if(req.user.id==req.params.id){

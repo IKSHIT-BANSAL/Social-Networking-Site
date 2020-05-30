@@ -36,6 +36,7 @@ class PostComments{
                     $(`#post-comments-${postId}`).prepend(newComment);
                     pSelf.deleteComment($(' .delete-comment-button', newComment));
 
+                    //enable functionality of toggle-like-button on new comment
                     new ToggleLike(' .toggle-like-button',newComment);
 
                     new Noty({
