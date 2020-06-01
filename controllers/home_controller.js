@@ -34,7 +34,7 @@ module.exports.home=async function(req,res){
                     path:'to_user'
                 }
             })  
-            console.log('User is here',user);
+            // console.log('User is here',user);
             return res.render('home',{
                 title:"Home",
                 posts:posts,
