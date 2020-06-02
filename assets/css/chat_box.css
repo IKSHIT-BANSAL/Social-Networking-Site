@@ -8,23 +8,23 @@
   background-color: white;
   padding: 5px;
   box-shadow: 1px 1px 1px 1px lightgrey; }
-  #user-chat-box #chat-messafes-list {
+  #user-chat-box #chat-messages-list {
     list-style: none;
     padding: 10px;
     height: 70%;
     background-color: white;
     overflow: auto; }
-    #user-chat-box #chat-messafes-list .other-messages {
+    #user-chat-box #chat-messages-list .other-messages {
       text-align: left;
       padding: 5px; }
-      #user-chat-box #chat-messafes-list .other-messages span {
+      #user-chat-box #chat-messages-list .other-messages span {
         display: inline-block;
         padding: 10px;
         background-color: orange; }
-    #user-chat-box #chat-messafes-list .self-messages {
+    #user-chat-box #chat-messages-list .self-messages {
       text-align: right;
       padding: 5px; }
-      #user-chat-box #chat-messafes-list .self-messages span {
+      #user-chat-box #chat-messages-list .self-messages span {
         display: inline-block;
         padding: 10px;
         background-color: lightcyan; }

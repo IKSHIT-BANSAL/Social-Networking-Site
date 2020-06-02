@@ -15,6 +15,8 @@ class ChatEngine{
 
     //provide to and from connection to user
     connectionHandler(){
+        //from here we are going to chat_sockets.js file
+
         let self=this;
         //on is used to receive event
         //connect is an event
@@ -33,6 +35,36 @@ class ChatEngine{
             })
         });
 
-        //from here we are going to chat_sockets.js file
+        $('#send-message').click(function(){
+            let msg=$('#chat-message-input').val();
+            if(msg!=''){
+                self.socket.emit('send_message',{
+                    message:msg,
+                    user_email:self.userEmail,
+                    chatroom:'codeial'
+                });
+            }
+        })        
+        
+        self.socket.on('receive_message',function(data){
+            console.log('message received',data.message);
+
+            let newMessage=$('<li>');       //list item is created
+            let messageType='other-messages';
+            
+            if(data.user_email==self.userEmail){
+                messageType='self-messages';
+            }
+            newMessage.append($('<span>',{
+                'html':data.message
+            }));
+            newMessage.append($('<sub>',{
+                'html':data.user_email
+            }));
+            newMessage.addClass(messageType);
+
+            $('#chat-messages-list').append(newMessage);
+        })
+        
     }
 }
