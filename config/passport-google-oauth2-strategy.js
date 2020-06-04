@@ -2,12 +2,13 @@ const passport=require('passport');
 const googleStrategy=require('passport-google-oauth').OAuth2Strategy;
 const crypto=require('crypto');
 const User=require('../models/user');
+const env=require('./environment');
 
 //tell passport to use a new startegy for google login
 passport.use(new googleStrategy({
-    clientID:"915546936075-eof96n3iqj1olpjsdmeqd23l9scc3sac.apps.googleusercontent.com",
-    clientSecret:"ujBbRXIw_qrGoRj2mTtOpolc",
-    callbackURL:"http://localhost:8000/users/auth/google/callback"
+    clientID:env.google_client_ID,
+    clientSecret:env.google_clientSecret,
+    callbackURL:env.google_callbackURL
     
     //accesstoken is like jwt token we genrated
     //refreshtoken if our accesstoken expires then we use it to get a new token

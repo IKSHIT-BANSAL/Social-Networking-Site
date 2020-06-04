@@ -1,4 +1,5 @@
 const express=require('express');
+const env=require('./config/environment');
 
 //Requiring a cookie
 const cookieParser=require('cookie-parser');
@@ -26,10 +27,11 @@ const chatServer=require('http').Server(app);
 const chatSocket=require('./config/chat_sockets').chatSockets(chatServer);  //chatSockets is a func in config file
 chatServer.listen(5000);
 console.log('Chat Server is listening on port 5000');
+const path=require('path');
 
 app.use(sassMiddleware({
-    src:'./assets/scss',
-    dest:'./assets/css',
+    src: path.join(__dirname, env.asset_path, 'scss'),
+    dest: path.join(__dirname, env.asset_path, 'css'),
     debug:true,
     outputStyle:'extended',
     prefix:'/css'
@@ -37,7 +39,7 @@ app.use(sassMiddleware({
 
 app.use(express.urlencoded());
 app.use(cookieParser());    //Used Cokkie in the middleware
-app.use(express.static('./assets'));
+app.use(express.static(env.asset_path));
 
 //use layouts
 app.use(expressLayouts);
@@ -58,7 +60,7 @@ app.set('views','./views');
 app.use(session({
     name:'Codeial',
     //ToDO change the secret before deployment in production mode
-    secret:'Something',
+    secret: env.session_cookie_key,
     saveUninitialized:false,
     resave:false,
     cookie:{

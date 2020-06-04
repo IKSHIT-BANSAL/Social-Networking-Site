@@ -15,6 +15,7 @@ class ChatEngine{
 
     //provide to and from connection to user
     connectionHandler(){
+
         //from here we are going to chat_sockets.js file
 
         let self=this;
@@ -47,6 +48,7 @@ class ChatEngine{
         })        
         
         self.socket.on('receive_message',function(data){
+            // setInterval(update,1000);
             console.log('message received',data.message);
 
             let newMessage=$('<li>');       //list item is created
@@ -64,6 +66,7 @@ class ChatEngine{
             newMessage.addClass(messageType);
 
             $('#chat-messages-list').append(newMessage);
+            
         })
         
     }
