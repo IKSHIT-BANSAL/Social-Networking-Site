@@ -45,6 +45,7 @@ class ChatEngine{
                     chatroom:'codeial'
                 });
             }
+            $("#chat-messages-list").stop().animate({ scrollTop: $("#chat-messages-list")[0].scrollHeight}, 1000);
         })        
         
         self.socket.on('receive_message',function(data){

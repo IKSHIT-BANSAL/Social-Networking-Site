@@ -1,5 +1,6 @@
 const express=require('express');
 const env=require('./config/environment');
+const logger=require('morgan');
 
 //Requiring a cookie
 const cookieParser=require('cookie-parser');
@@ -29,13 +30,16 @@ chatServer.listen(5000);
 console.log('Chat Server is listening on port 5000');
 const path=require('path');
 
-app.use(sassMiddleware({
-    src: path.join(__dirname, env.asset_path, 'scss'),
-    dest: path.join(__dirname, env.asset_path, 'css'),
-    debug:true,
-    outputStyle:'extended',
-    prefix:'/css'
-}));
+if(env.name=='development'){
+    app.use(sassMiddleware({
+        src: path.join(__dirname, env.asset_path, 'scss'),
+        dest: path.join(__dirname, env.asset_path, 'css'),
+        debug:true,
+        outputStyle:'extended',
+        prefix:'/css'
+    }));
+}
+
 
 app.use(express.urlencoded());
 app.use(cookieParser());    //Used Cokkie in the middleware
@@ -46,6 +50,9 @@ app.use(expressLayouts);
 
 //make uploads path available to the browser
 app.use('/uploads',express.static(__dirname + '/uploads'));
+
+app.use(logger(env.morgan.mode,env.morgan.options))
+// app.use(logger);
 
 //To extract and style from sub pages into the layour
 app.set('layout extractStyles',true);
