@@ -1,0 +1,1 @@
+(function(e){console.log(e),console.log($(e)),$(e).click((function(o){o.preventDefault(),$.ajax({type:"Post",url:$(e).attr("href"),success:function(o){console.log(o),0==o.data.userSelected?$(e).html("Friend is removed"):$(e).html("Friend is added")},error:function(e){console.log("Error",e.responseText)}})}))})($(".toggle-button"));

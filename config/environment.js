@@ -3,9 +3,11 @@ const rfs=require('rotating-file-stream');
 const path=require('path');
 
 const logDirectory=path.join(__dirname,'../production_logs');
+//if file exist then use else create it
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 
 //create a rotating stream
+//acess.log is file name created with
 const accessLogStream=rfs.createStream('access.log',{
     interval:'1d',  //rotate daily
     path:logDirectory

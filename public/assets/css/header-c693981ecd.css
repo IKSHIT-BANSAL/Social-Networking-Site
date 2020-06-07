@@ -1,0 +1,19 @@
+#header-ejs {
+  width: 100%;
+  height: auto;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between; }
+  #header-ejs #pg-heading {
+    font-size: 1.5rem;
+    padding: 10px; }
+  #header-ejs ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 4px;
+    margin: 5px;
+    font-size: 1.2rem;
+    text-transform: capitalize; }
+    #header-ejs ul li a {
+      color: white;
+      text-decoration: none; }

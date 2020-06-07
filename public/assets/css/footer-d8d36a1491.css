@@ -1,0 +1,15 @@
+#footer {
+  display: flex;
+  background-color: grey; }
+  #footer p {
+    font-size: 20px;
+    padding: 7px;
+    color: honeydew; }
+  #footer #list {
+    padding: 10px;
+    margin-left: 15px; }
+    #footer #list a {
+      display: block;
+      color: darkblue;
+      text-decoration: none;
+      font-size: 20px; }
