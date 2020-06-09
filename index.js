@@ -6,6 +6,7 @@ const logger=require('morgan');
 const cookieParser=require('cookie-parser');
 
 const app=express();
+//(app) to access viewHelpers in views 
 require('./config/view-helpers')(app);
 const port=8000;
 const expressLayouts=require('express-ejs-layouts');
