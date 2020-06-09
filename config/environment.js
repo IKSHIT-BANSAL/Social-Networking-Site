@@ -26,7 +26,7 @@ const development={
         secure:false,
         auth:{              //from user mails are sent to other
             user:'ikshitbansal1998@gmail.com',
-            pass:'ikshit1998'
+            pass:'****'
         }
     },
     google_client_ID:"915546936075-eof96n3iqj1olpjsdmeqd23l9scc3sac.apps.googleusercontent.com",
