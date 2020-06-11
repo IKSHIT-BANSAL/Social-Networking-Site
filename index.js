@@ -43,7 +43,7 @@ if(env.name=='development'){
 }
 
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended : false}));
 app.use(cookieParser());    //Used Cokkie in the middleware
 app.use(express.static(env.asset_path));
 
