@@ -6,7 +6,7 @@ class ChatEngine{
         this.userEmail=userEmail;
 
         //io ia a global variable from cdn documentation
-        this.socket=io.connect('http://localhost/:5000');        //inbuilt socket library used from home.ejs
+        this.socket=io.connect('http://54.152.55.235:5000');        //inbuilt socket library used from home.ejs
 
         if(this.userEmail){
             this.connectionHandler();
