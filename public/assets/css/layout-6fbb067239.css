@@ -1,6 +1,6 @@
 body {
   margin: 0; }
   body #layout-main {
-    height: auto;
+    height: 100%;
     background-color: red;
     display: flex; }

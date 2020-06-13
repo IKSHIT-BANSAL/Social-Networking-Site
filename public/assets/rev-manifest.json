@@ -3,12 +3,7 @@
   "css/footer.css": "css/footer-d8d36a1491.css",
   "css/header.css": "css/header-c693981ecd.css",
   "css/home.css": "css/home-7cbaecfaa6.css",
-  "css/layout.css": "css/layout-9c29e945da.css",
+  "css/layout.css": "css/layout-6fbb067239.css",
   "css/sign.css": "css/sign-16a4bd794a.css",
-  "css/users.css": "css/users-99077cd7d2.css",
-  "js/chat_engine.js": "js/chat_engine-c3951591fc.js",
-  "js/home_comments.js": "js/home_comments-56a323e113.js",
-  "js/home_posts.js": "js/home_posts-c0608ddf5a.js",
-  "js/toggle-button.js": "js/toggle-button-117b271561.js",
-  "js/toggle-likes.js": "js/toggle-likes-3b02787d23.js"
+  "css/users.css": "css/users-99077cd7d2.css"
 }
