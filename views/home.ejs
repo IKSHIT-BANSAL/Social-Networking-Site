@@ -24,32 +24,34 @@
     </section>
     
     <section id="user-friends">
-        <div id="friends">
-            <h4>
-                <u>Friends</u>
-                <p>
-                    <%= user.friendship.length %>
-                </p>
-                <% for(friend of user.friendship){ %>
-                  
-                    <% if(friend.from_user.id==locals.user.id){ %>
-                        <p>
-                            <%= friend.to_user.name %>
-                        </p>
+        <% if(locals.user){ %>
+            <div id="friends">
+                <h4>
+                    <u>Friends</u>
+                    <p>
+                        <%= user.friendship.length %>
+                    </p>
+                    <% for(friend of user.friendship){ %>
                     
-                    <%}%>
-                    <% if(friend.to_user.id==locals.user.id){ %>
-                        <p>
-                            <%= friend.from_user.name %>
-                        </p>
+                        <% if(friend.from_user.id==locals.user.id){ %>
+                            <p>
+                                <%= friend.to_user.name %>
+                            </p>
+                        
+                        <%}%>
+                        <% if(friend.to_user.id==locals.user.id){ %>
+                            <p>
+                                <%= friend.from_user.name %>
+                            </p>
+                        
+                        <%}%>
                     
-                    <%}%>
-                   
-                <% } %>
-            </h4>
+                    <% } %>
+                </h4>
 
 
-        </div>
+            </div>
+        <%}%>    
         
         <div id="users">
             <h4>

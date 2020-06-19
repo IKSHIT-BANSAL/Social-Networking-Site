@@ -35,15 +35,14 @@ module.exports.home=async function(req,res){
                 }
             })  
             // console.log('User is here',user);
-            return res.render('home',{
-                title:"Home",
-                posts:posts,
-                all_users:users,
-                user:user
-            });         
-        }else{
-            return res.redirect('/users/sign-in');
+         
         }
+        return res.render('home',{
+            title:"Home",
+            posts:posts,
+            all_users:users,
+            user:user
+        });    
 
 
     } catch (err) {

@@ -1,0 +1,367 @@
+::1 - - [13/Jun/2020:18:30:03 +0000] "GET / HTTP/1.1" 200 5614 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:30:04 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:30:10 +0000] "POST /comments/create HTTP/1.1" 200 768 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:31:38 +0000] "GET / HTTP/1.1" 200 6331 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[0mGET / [36m302[0m 224.845 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 50.519 ms - 2112[0m
+[0mGET /users/css/footer.css [33m404[0m 27.852 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 154.291 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 123.893 ms - 157[0m
+[0mGET /users/css/layout.css [33m404[0m 60.034 ms - 159[0m
+[0mPOST /users/create-session [36m302[0m 18.329 ms - 46[0m
+[0mGET / [32m200[0m 124.433 ms - 11566[0m
+[0mGET /users/profile/5e942205f15a4715ccdd6f91 [36m304[0m 151.557 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 48.060 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 49.007 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 70.055 ms - 167[0m
+[0mGET /users/profile/css/users.css [33m404[0m 69.924 ms - 166[0m
+[0mGET /users/profile/js/toggle-button.js [33m404[0m 18.607 ms - 172[0m
+[0mGET /users/sign-out [36m302[0m 11.143 ms - 46[0m
+[0mGET / [36m302[0m 69.821 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 8.299 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 147.606 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 149.011 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 21.109 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 27.980 ms - 157[0m
+::1 - - [13/Jun/2020:18:33:15 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:36 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:36 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:36 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:40 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:40 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:44 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:49 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:49 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:54 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:54 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:34:54 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:07 +0000] "GET / HTTP/1.1" 200 6232 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:07 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:11 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:11 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:36:12 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:15 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:15 +0000] "GET /users/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:22 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:22 +0000] "GET / HTTP/1.1" 200 6501 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:22 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:23 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:23 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:23 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:23 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:41 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:41 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:53:41 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:26 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:26 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:44 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:44 +0000] "GET / HTTP/1.1" 200 6501 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:44 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:44 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:56 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:56 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [13/Jun/2020:18:55:56 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:10 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:10 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:10 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:11 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:12 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:16 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:23 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:24 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:24 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:33 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:33 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:33 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:45:33 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:46:06 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:46:06 +0000] "GET /users/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:46:07 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:07:46:07 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:08:21 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:08:21 +0000] "GET /users/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:08:22 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:08:22 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:08:34 +0000] "GET /css/layout-9c29e945da.css HTTP/1.1" 404 164 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:10:41 +0000] "GET /users/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:10:47 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:10:47 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:11:01 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:11:01 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [14/Jun/2020:08:11:01 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:18 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:18 +0000] "GET /users/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:19 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:23 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:23 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:34 +0000] "GET / HTTP/1.1" 200 6331 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:31:43 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:03 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:13 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:19 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:19 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:19 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:31 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:31 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:43 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:43 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:43 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:51 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:51 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:32:55 +0000] "GET /api/v1/posts HTTP/1.1" 200 795 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:33:04 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:33:04 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:33:04 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 58.832 ms - 2112[0m
+[0mGET /users/css/layout.css [33m404[0m 40.469 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 47.053 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 51.911 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 81.534 ms - 157[0m
+[0mGET /users/sign-in [36m304[0m 67.275 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 125.371 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 143.491 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 46.395 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 49.538 ms - 157[0m
+[0mGET /users/sign-in [36m304[0m 8.648 ms - -[0m
+[0mGET /users/css/header.css [33m404[0m 25.448 ms - 159[0m
+[0mGET /users/css/layout.css [33m404[0m 39.394 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 39.302 ms - 157[0m
+[0mGET /users/css/footer.css [33m404[0m 29.956 ms - 159[0m
+[0mGET /users/sign-in [36m304[0m 5.594 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 21.194 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 23.476 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 46.150 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 14.276 ms - 157[0m
+[0mPOST /users/create-session [36m302[0m 44.213 ms - 46[0m
+[0mGET / [32m200[0m 247.792 ms - 11566[0m
+[0mGET /users/sign-out [36m302[0m 20.223 ms - 46[0m
+[0mGET / [36m302[0m 74.562 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 7.139 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 56.920 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 133.363 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 15.888 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 21.326 ms - 157[0m
+[0mGET /users/sign-in [36m304[0m 59.401 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 21.449 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 69.597 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 66.536 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 69.978 ms - 157[0m
+[0mPOST /users/create-session [36m302[0m 49.142 ms - 46[0m
+[0mGET / [32m200[0m 135.132 ms - 11566[0m
+[0mGET /users/sign-out [36m302[0m 13.261 ms - 46[0m
+[0mGET / [36m302[0m 51.048 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 8.491 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 75.273 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 70.304 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 75.368 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 131.091 ms - 157[0m
+::1 - - [16/Jun/2020:08:35:25 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:35:29 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:35:29 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:35:36 +0000] "GET / HTTP/1.1" 200 6331 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:36:01 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:36:14 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:36:14 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:08:36:14 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:42:51 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:42:51 +0000] "GET /users/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:42:53 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:42:58 +0000] "POST /users/create-session HTTP/1.1" 302 72 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:42:58 +0000] "GET /users/sign-in HTTP/1.1" 200 2430 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:43:04 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:43:04 +0000] "GET / HTTP/1.1" 200 6600 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:43:48 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:43:48 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:43:48 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:43:51 +0000] "GET /users/sign-up HTTP/1.1" 200 2175 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:44:07 +0000] "POST /users/create HTTP/1.1" 302 72 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:44:07 +0000] "GET /users/sign-in HTTP/1.1" 200 2432 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:44:15 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:44:15 +0000] "GET / HTTP/1.1" 200 6420 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:44:33 +0000] "POST /comments/create HTTP/1.1" 200 611 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:48:04 +0000] "GET /users/profile/5ee912f701205e0c30966762 HTTP/1.1" 200 3405 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:48:09 +0000] "GET /users/profile/5ed7ecd4953c7251a8d04850 HTTP/1.1" 200 3335 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:48:13 +0000] "POST /friendship/addFriend/?id=5ed7ecd4953c7251a8d04850 HTTP/1.1" 200 471 "http://localhost:8000/users/profile/5ed7ecd4953c7251a8d04850" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:48:17 +0000] "GET / HTTP/1.1" 200 6921 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:13 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:13 +0000] "GET / HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:13 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:19 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:19 +0000] "GET / HTTP/1.1" 200 7507 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:22 +0000] "GET / HTTP/1.1" 200 7238 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:27 +0000] "GET /users/profile/5ee912f701205e0c30966762 HTTP/1.1" 200 3363 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:34 +0000] "GET /users/profile/5ee912f701205e0c30966762 HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:36 +0000] "POST /friendship/addFriend/?id=5ee912f701205e0c30966762 HTTP/1.1" 200 468 "http://localhost:8000/users/profile/5ee912f701205e0c30966762" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:40 +0000] "GET / HTTP/1.1" 200 7480 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:42 +0000] "GET /users/profile/5ee912f701205e0c30966762 HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:44 +0000] "POST /friendship/addFriend/?id=5ee912f701205e0c30966762 HTTP/1.1" 200 273 "http://localhost:8000/users/profile/5ee912f701205e0c30966762" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:48 +0000] "GET / HTTP/1.1" 200 7238 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:50 +0000] "GET /users/profile/5ee912f701205e0c30966762 HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:52 +0000] "POST /friendship/addFriend/?id=5ee912f701205e0c30966762 HTTP/1.1" 200 468 "http://localhost:8000/users/profile/5ee912f701205e0c30966762" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:18:50:55 +0000] "GET / HTTP/1.1" 200 7480 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[0mGET / [36m302[0m 610.444 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 50.644 ms - 2112[0m
+[0mGET /users/css/header.css [33m404[0m 104.203 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 103.086 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 13.851 ms - 157[0m
+[0mGET /users/css/layout.css [33m404[0m 57.017 ms - 159[0m
+[0mGET /users/css/layout.css [33m404[0m 14.095 ms - 159[0m
+[0mGET /users/css/layout.css [33m404[0m 24.155 ms - 159[0m
+[0mGET /users/css/sign.css [33m404[0m 21.849 ms - 157[0m
+[0mGET /users/css/footer.css [33m404[0m 17.623 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 18.094 ms - 159[0m
+[0mPOST /users/create-session [36m302[0m 21.008 ms - 46[0m
+[0mGET / [32m200[0m 117.302 ms - 11566[0m
+[0mGET /users/profile/5e942205f15a4715ccdd6f91 [32m200[0m 161.286 ms - 3348[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 274.543 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 264.998 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 91.905 ms - 167[0m
+[0mGET /users/profile/css/users.css [33m404[0m 93.816 ms - 166[0m
+[0mGET /users/profile/js/toggle-button.js [33m404[0m 133.459 ms - 172[0m
+[0mGET /users/sign-out [36m302[0m 11.787 ms - 46[0m
+[0mGET / [36m302[0m 63.256 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 9.518 ms - -[0m
+::1 - - [16/Jun/2020:19:06:35 +0000] "GET / HTTP/1.1" 302 72 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:06:36 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:06:40 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:06:40 +0000] "GET / HTTP/1.1" 200 7767 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:06:53 +0000] "GET / HTTP/1.1" 200 7498 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:07:03 +0000] "GET / HTTP/1.1" 200 7480 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:09:45 +0000] "GET / HTTP/1.1" 200 7575 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:09:47 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:09:47 +0000] "GET / HTTP/1.1" 200 4905 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:09:53 +0000] "GET / HTTP/1.1" 200 4639 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:09:57 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:01 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:01 +0000] "GET / HTTP/1.1" 200 7844 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:11 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:12 +0000] "GET / HTTP/1.1" 200 4905 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:32 +0000] "GET / HTTP/1.1" 200 4639 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:35 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:39 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:10:39 +0000] "GET / HTTP/1.1" 200 7844 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:11:12 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [16/Jun/2020:19:11:12 +0000] "GET / HTTP/1.1" 200 4905 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:06:13 +0000] "GET / HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:06:15 +0000] "GET / HTTP/1.1" 200 4639 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:06:15 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:06:16 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:06:19 +0000] "GET /api/v1/posts HTTP/1.1" 200 1252 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:08:56 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:15:35 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:16:59 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:02 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:12 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:21 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:29 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:29 +0000] "GET / HTTP/1.1" 200 7285 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:41 +0000] "POST /posts/create HTTP/1.1" 200 447 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:45 +0000] "POST /comments/create HTTP/1.1" 302 88 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:45 +0000] "GET / HTTP/1.1" 200 9308 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:50 +0000] "POST /comments/create HTTP/1.1" 200 637 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:17:56 +0000] "GET /api/v1/posts HTTP/1.1" 200 2446 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:25:34 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "http://localhost:4200/posts-list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:26:48 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "http://localhost:4200/posts-list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:41:58 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "http://localhost:4200/posts-list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:53:27 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "http://localhost:4200/posts-list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:53:42 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "http://localhost:4200/posts-list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:08:54:29 +0000] "GET /api/v1/posts HTTP/1.1" 304 - "http://localhost:4200/posts-list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[0mGET / [32m200[0m 1145.186 ms - 7340[0m
+[0mGET /favicon.ico [33m404[0m 43.752 ms - 150[0m
+[0mGET /users/sign-in [32m200[0m 19.408 ms - 2116[0m
+[0mPOST /users/create-session [36m302[0m 191.316 ms - 46[0m
+[0mGET / [32m200[0m 431.449 ms - 11668[0m
+[0mPOST /comments/create [32m200[0m 226.996 ms - 745[0m
+[0mGET / [32m200[0m 118.087 ms - 11919[0m
+[0mPOST /comments/create [32m200[0m 85.327 ms - 773[0m
+[0mGET /comments/destroy/5eea5d364ce103247c96f617 [32m200[0m 349.362 ms - 81[0m
+[0mPOST /comments/create [32m200[0m 34.388 ms - 771[0m
+[0mGET /users/profile/5ed0fe4739f76a4dcc44e9cd [32m200[0m 49.389 ms - 3411[0m
+[0mGET /users/profile/css/users.css [33m404[0m 180.095 ms - 166[0m
+[0mGET /users/profile/js/toggle-button.js [33m404[0m 12.604 ms - 172[0m
+[0mPOST /comments/create [32m200[0m 29.265 ms - 798[0m
+[0mGET /users/profile/5e942205f15a4715ccdd6f91 [32m200[0m 47.542 ms - 3351[0m
+[0mGET /users/profile/css/users.css [33m404[0m 15.742 ms - 166[0m
+[0mGET /users/profile/js/toggle-button.js [33m404[0m 13.591 ms - 172[0m
+[0mPOST /comments/create [32m200[0m 25.821 ms - 825[0m
+[0mGET /comments/destroy/5eea5d684ce103247c96f61a [32m200[0m 31.137 ms - 81[0m
+[0mGET / [32m200[0m 160.193 ms - 12957[0m
+[0mGET /users/profile/5ebcfd12470c57048c44bacb [32m200[0m 45.034 ms - 3347[0m
+[0mGET /users/profile/css/users.css [33m404[0m 28.670 ms - 166[0m
+[0mGET /users/profile/js/toggle-button.js [33m404[0m 12.433 ms - 172[0m
+[0mGET /users/sign-out [36m302[0m 8.829 ms - 46[0m
+[0mGET / [32m200[0m 69.589 ms - 8696[0m
+[0mGET / [32m200[0m 338.235 ms - 8430[0m
+[0mGET /users/sign-in [36m304[0m 13.038 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 26.033 ms - 46[0m
+[0mGET / [32m200[0m 105.942 ms - 13226[0m
+[0mPOST /comments/create [32m200[0m 73.692 ms - 607[0m
+[0mGET /users/profile/5e942205f15a4715ccdd6f91 [32m200[0m 45.757 ms - 3353[0m
+[0mPOST /comments/create [32m200[0m 35.858 ms - 634[0m
+[0mGET / [32m200[0m 118.221 ms - 14391[0m
+[0mGET /comments/destroy/5eea5dd441eb9e2b2cb993c3 [32m200[0m 39.941 ms - 81[0m
+[0mGET /comments/destroy/5eea5de041eb9e2b2cb993c4 [32m200[0m 26.152 ms - 81[0m
+[0mGET / [32m200[0m 82.693 ms - 12957[0m
+[0mGET /users/profile/5ebcfd12470c57048c44bacb [32m200[0m 22.691 ms - 3349[0m
+[0mPOST /friendship/addFriend/?id=5ebcfd12470c57048c44bacb [32m200[0m 35.347 ms - 384[0m
+[0mGET / [32m200[0m 128.764 ms - 13239[0m
+[0mGET /users/sign-out [36m302[0m 14.398 ms - 46[0m
+[0mGET / [32m200[0m 73.287 ms - 8696[0m
+::1 - - [17/Jun/2020:18:17:42 +0000] "GET / HTTP/1.1" 200 5762 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:11 +0000] "GET / HTTP/1.1" 200 5835 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:11 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:11 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:11 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:11 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:11 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:14 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:20 +0000] "GET /users/sign-in HTTP/1.1" 200 2098 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:20 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:23 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:24 +0000] "GET / HTTP/1.1" 200 10093 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:24 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:24 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:24 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:24 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:18:24 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:24 +0000] "GET / HTTP/1.1" 200 9751 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:33 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:33 +0000] "GET / HTTP/1.1" 200 6028 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:36 +0000] "GET / HTTP/1.1" 200 5762 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:39 +0000] "GET /users/sign-in HTTP/1.1" 200 2058 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:43 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:23:43 +0000] "GET / HTTP/1.1" 200 10020 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:24:02 +0000] "GET /users/profile/5ee912f701205e0c30966762 HTTP/1.1" 200 3229 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:24:07 +0000] "GET /friendship/addFriend/?id=5ee912f701205e0c30966762 HTTP/1.1" 404 160 "http://localhost:8000/users/profile/5ee912f701205e0c30966762" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:24:15 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [17/Jun/2020:18:24:16 +0000] "GET / HTTP/1.1" 200 6028 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[0mGET / [32m200[0m 665.820 ms - 8433[0m
+[0mGET /favicon.ico [33m404[0m 142.529 ms - 150[0m
+[0mGET /users/sign-in [32m200[0m 43.018 ms - 2116[0m
+[0mPOST /users/create-session [36m302[0m 57.723 ms - 46[0m
+[0mGET / [32m200[0m 128.019 ms - 13511[0m
+[0mGET /users/profile/5e942205f15a4715ccdd6f91 [36m304[0m 69.585 ms - -[0m
+[0mGET /users/profile/5e94226693f6b0468c1e221f [32m200[0m 22.830 ms - 3350[0m
+[0mPOST /comments/create [32m200[0m 111.071 ms - 607[0m
+[0mGET /users/profile/5e942205f15a4715ccdd6f91 [36m304[0m 33.416 ms - -[0m
+[0mPOST /comments/create [32m200[0m 43.858 ms - 634[0m
+[0mGET / [32m200[0m 132.167 ms - 14676[0m
+[0mGET /comments/destroy/5eed038580c8100ac47d83fe [32m200[0m 273.443 ms - 81[0m
+[0mGET /comments/destroy/5eed039480c8100ac47d83ff [32m200[0m 29.450 ms - 81[0m
+[0mGET /users/sign-out [36m302[0m 15.362 ms - 46[0m
+[0mGET / [32m200[0m 52.216 ms - 8699[0m
+::1 - - [19/Jun/2020:18:28:19 +0000] "GET / HTTP/1.1" 200 5955 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+::1 - - [19/Jun/2020:18:28:33 +0000] "GET /users/sign-in HTTP/1.1" 200 2160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+::1 - - [19/Jun/2020:18:28:37 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+::1 - - [19/Jun/2020:18:28:37 +0000] "GET / HTTP/1.1" 200 10213 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+::1 - - [19/Jun/2020:18:28:50 +0000] "POST /comments/create HTTP/1.1" 200 581 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+::1 - - [19/Jun/2020:18:28:53 +0000] "GET / HTTP/1.1" 200 10462 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+::1 - - [19/Jun/2020:18:29:16 +0000] "GET /comments/destroy/5ee9d1ae2da2571af47cf696 HTTP/1.1" 200 81 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
